@@ -146,7 +146,7 @@ const ContactUs: React.FC = () => {
                     htmlFor="email"
                     className=" lg:mb-2 font-quickSand text-base ml-2"
                   >
-                    Email /
+                    Email
                   </label>
                   <input
                     type="email"
