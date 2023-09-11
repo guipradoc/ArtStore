@@ -1,0 +1,4 @@
+{
+  "extends": ["@rocketseat/eslint-config/react", "next", "prettier"]
+  // "extends": "@rocketseat/eslint-config/node"
+}
