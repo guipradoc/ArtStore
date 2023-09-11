@@ -14,8 +14,11 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily: {
-        baloo: ['Baloo 2', 'sans'],
-        roboto: ['Roboto', 'sans'],
+        baloo: ['Baloo', 'sans'],
+        robotoBlack: ['RobotoBlack', 'sans'],
+        robotoLight: ['RobotoLight', 'sans'],
+        robotoRegular: ['RobotoRegular', 'sans'],
+        robotoThin: ['RobotoThin', 'sans'],
       },
       borderRadius: {
         none: '0',
