@@ -80,16 +80,6 @@ export default function Document() {
           content="favicon/ms-icon-144x144.png"
         />
         <meta name="theme-color" content="#ffffff" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Roboto&display=swap"
-          rel="stylesheet"
-        ></link>
       </Head>
       <body>
         <Main />

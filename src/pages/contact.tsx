@@ -51,12 +51,12 @@ const ContactUs: React.FC = () => {
           <div className="lg:w-1/2 p-8 align-middle justify-center items-center flex ">
             <div className="relative  ">
               <div className="absolute inset-0 flex flex-col justify-center items-center ">
-                <h1 className=" md:text-8xl text-6xl text-center lg:leading-normal font-valery">
+                <h1 className=" md:text-8xl text-6xl text-center lg:leading-normal font-robotoThin ">
                   Get in <br />
                   Touch
                 </h1>
                 <div>
-                  <div className="lg:mt-4  mt-2 flex flex-row ">
+                  <div className="lg:mt-4  mt-2 flex flex-row font-robotoThin">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -68,7 +68,7 @@ const ContactUs: React.FC = () => {
                     </svg>
                     <p>
                       <a href="mailto:abenitez@abenitezarchitecture.com">
-                        &nbsp;abenitez@abenitezarchitecture.com
+                        &nbsp;oi@graosaporta.com
                       </a>
                     </p>
                   </div>
@@ -82,13 +82,13 @@ const ContactUs: React.FC = () => {
                     >
                       <path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path>
                     </svg>
-                    <p className="">
+                    <p className="font-robotoThin">
                       <a
                         href="https://www.instagram.com/abenitezarchitecture/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        &nbsp;@abenitezarchitecture
+                        &nbsp;@graosaporta
                       </a>
                     </p>
                   </div>
@@ -98,7 +98,7 @@ const ContactUs: React.FC = () => {
           </div>
 
           {/* Right Side: Form */}
-          <div className="lg:w-1/2 p-8 align-middle justify-center items-center flex ">
+          <div className="lg:w-1/2 p-8 align-middle justify-center items-center flex font-robotoThin">
             <form
               onSubmit={submitForm}
               className="align-middle justify-center items-center"
@@ -107,7 +107,7 @@ const ContactUs: React.FC = () => {
                 <div className="flex-1 lg:mb-2">
                   <label
                     htmlFor="first_name"
-                    className=" lg:mb-2 font-quickSand text-base ml-2"
+                    className=" lg:mb-2 text-base ml-2 font-robotoThin"
                   >
                     First Name
                   </label>

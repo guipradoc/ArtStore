@@ -152,3 +152,34 @@ body {
 .arrow--disabled {
   fill: #000;
 }
+
+
+@font-face {
+  font-family: 'Baloo';
+  src: url('/font/Baloo2-VariableFont_wght.ttf') format('opentype');
+  -webkit-font-smoothing: antialiased;
+} 
+
+@font-face {
+  font-family: 'RobotoBlack';
+  src: url('/font/Roboto-Black.ttf') format('opentype');
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url('/font/Roboto-Light.ttf') format('opentype');
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url('/font/Roboto-Regular.ttf') format('opentype');
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'RobotoThin';
+  src: url('/font/Roboto-Thin.ttf') format('opentype');
+  -webkit-font-smoothing: antialiased;
+}
