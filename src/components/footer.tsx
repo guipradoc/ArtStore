@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer: React.FC = () => {
   return (
-    <footer className=" bg-gray-50 mt-4 ">
+    <footer className=" bg-gray-50  ">
       <div className=" py-2 container mx-auto text-xs text-center text-black">
         <p>
           © {new Date().getFullYear()} Grãos à Porta Cuiabá. All rights

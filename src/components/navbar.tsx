@@ -58,7 +58,7 @@ export default function NavBar() {
   }, [])
 
   return (
-    <nav className="top-0 z-50 bg-white border-gray-200 dark:bg-gray-900">
+    <nav className="top-0 z-50 font-baloo  bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-end mx-auto p-4">
         <Link href="/" className="flex items-center">
           <Image alt="logo" src={logo} className="mb-6" />
@@ -132,13 +132,13 @@ export default function NavBar() {
                   </li>
                   <li>
                     <Link
-                      href="/about"
+                      href="/sobre"
                       className="block py-2 pl-3 text-8xl pr-4 text-gray-900 rounded hover:bg-brown-light md:border-0 md:p-0 dark:text-white md:dark:hover:text-blue-500 md:dark:hover:bg-transparent cursor-pointer  "
                     >
-                      About
+                      Sobre
                     </Link>
                   </li>
-                  {/* <li
+                  <li
                     className={`relative group ${
                       showProjects ? 'md:hover:bg-transparent' : ''
                     }`}
@@ -147,12 +147,12 @@ export default function NavBar() {
                     onClick={handleToggleMenu}
                   >
                     <Link
-                      href="/work"
+                      href="/types"
                       className="block py-2 pl-3 text-8xl pr-4 text-gray-900 rounded hover:bg-brown-light md:border-0 md:p-0 dark:text-white md:dark:hover:text-blue-500 md:dark:hover:bg-transparent cursor-pointer"
                     >
-                      Work
+                      Tipos de Café
                     </Link>
-                  </li> */}
+                  </li>
                   <li>
                     <Link
                       href="/contact"
@@ -182,27 +182,58 @@ export default function NavBar() {
             </li>
             <li>
               <Link
-                href="/about"
+                href="/sobre"
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-brown-light md:border-0 md:p-0 dark:text-white md:dark:hover:text-blue-500 md:dark:hover:bg-transparent cursor-pointer"
               >
-                About
+                Sobre
               </Link>
             </li>
-            {/* <li
+            <li
               className={`relative group ${
                 showProjects ? 'md:hover:bg-transparent' : ''
               }`}
               onMouseEnter={handleProjectsHover}
               onMouseLeave={handleProjectsLeave}
-              onClick={handleToggleMenu}
             >
               <Link
-                href="/portfolio"
-                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-brown-light md:border-0 md:p-0 dark:text-white md:dark:hover:text-blue-500 md:dark:hover:bg-transparent cursor-pointer"
+                href="/#marx"
+                className="block py-2 pl-3 pr-4 hover:text-rustic-brown  rounded md:border-0 md:p-0 dark:text-white  cursor-pointer"
               >
-                Portfolio
+                Tipos de Café
               </Link>
-            </li> */}
+              {/* {showProjects && (
+                <ul className="absolute">
+                  <li>
+                    <Link href="/projects/marx12">
+                      <div className="block py-2 pl-3 pr-4 hover:text-rustic-brown  hover:tracking-normal rounded md:border-0 md:p-0 dark:text-white  cursor-pointer">
+                        Arabica
+                      </div>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/projects/mane">
+                      <div className="block py-2 pl-3 pr-4 hover:text-rustic-brown  hover:tracking-normal rounded md:border-0 md:p-0 dark:text-white  cursor-pointer">
+                        Robusta
+                      </div>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/projects/marx15">
+                      <div className="block py-2 pl-3 pr-4 hover:text-rustic-brown  hover:tracking-normal rounded md:border-0 md:p-0 dark:text-white  cursor-pointer">
+                        Liberica
+                      </div>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/projects/post">
+                      <div className="block py-2 pl-3 pr-4 hover:text-rustic-brown  hover:tracking-normal rounded md:border-0 md:p-0 dark:text-white  cursor-pointer">
+                        Excelsa
+                      </div>
+                    </Link>
+                  </li>
+                </ul>
+              )} */}
+            </li>
             <li>
               <Link
                 href="/contact"

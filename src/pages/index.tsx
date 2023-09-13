@@ -65,16 +65,16 @@ export default function Home({ products }: HomeProps) {
       </Head>
       <div className="flex lg:flex-row flex-col justify-around bg-white h-1/2  ">
         <div className="justify-center flex flex-col items-center m-4 lg:m-16 ">
-          <h1 className="lg:text-5xl text-2xl text-center flex items-center justify-center h-1/2">
+          <h1 className="font-baloo  lg:text-5xl text-2xl text-center flex items-center justify-center h-1/2">
             Encontre o melhor café, <br />
             entregue na porta de sua casa!
           </h1>
-          <h3 className="lg:text-2xl text-lg text-center">
+          <h3 className="lg:text-xl text-lg text-center">
             Descubra uma seleção exclusiva de grãos de café gourmet <br />
             selecionados pelos melhores sommeliers no mundo.
           </h3>
         </div>
-        <div className="w-full lg:w-1/4 justify-center">
+        <div className="w-full lg:w-1/4 font-baloo justify-center">
           <div className="navigation-wrapper">
             <div
               ref={sliderRef}
@@ -135,7 +135,7 @@ export default function Home({ products }: HomeProps) {
         </div>
         {/* adding the other images here below  */}
         <div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-center">
             {products.map((product) => {
               return (
                 <Link
@@ -143,15 +143,15 @@ export default function Home({ products }: HomeProps) {
                   key={product.id}
                   prefetch={false}
                 >
-                  <div className="bg-white p-4 hover:border-2  border-green-dark rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-lg cursor-pointer">
+                  <div className="font-baloo  bg-white p-4 hover:border-2  border-green-dark rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-lg cursor-pointer">
                     <Image
                       src={product.imageUrl}
                       width={700}
                       height={700}
                       alt=""
-                      className=""
+                      className="justify-center"
                     />
-                    <footer className="mt-2">
+                    <footer className="mt-2 justify-center">
                       <strong>{product.name}</strong>
                       <span> {product.price}</span>
                     </footer>

@@ -33,25 +33,31 @@ export default function Home({ products }: HomeProps) {
       <Head>
         <title>Home | Grãos à Porta Cuiabá</title>
       </Head>
-
-      <div ref={sliderRef} className="keen-slider">
-        {products.map((product) => {
-          return (
-            <Link
-              href={`/product/${product.id}`}
-              key={product.id}
-              prefetch={false}
-            >
-              <div className="keen-slider__slide">
-                <Image src={product.imageUrl} width={700} height={700} alt="" />
-                <footer>
-                  <strong>{product.name}</strong>
-                  <span> {product.price}</span>
-                </footer>
-              </div>
-            </Link>
-          )
-        })}
+      <div style={{ width: '100%', overflowX: 'auto' }}>
+        <div ref={sliderRef} className="keen-slider">
+          {products.map((product) => {
+            return (
+              <Link
+                href={`/product/${product.id}`}
+                key={product.id}
+                prefetch={false}
+              >
+                <div className="keen-slider__slide">
+                  <Image
+                    src={product.imageUrl}
+                    width={700}
+                    height={700}
+                    alt=""
+                  />
+                  <footer>
+                    <strong>{product.name}</strong>
+                    <span> {product.price}</span>
+                  </footer>
+                </div>
+              </Link>
+            )
+          })}
+        </div>
       </div>
     </>
   )
