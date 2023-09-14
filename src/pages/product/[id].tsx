@@ -72,7 +72,7 @@ export default function Product({ product }: ProductProps) {
             disabled={isCreatingCheckoutSession}
             onClick={handleBuyProduct}
           >
-            Buy
+            Compre
           </button>
         </div>
       </div>
@@ -117,7 +117,7 @@ export const getStaticProps: GetStaticProps<any, { id: string }> = async ({
   const formattedPrice = price?.unit_amount
     ? new Intl.NumberFormat('en-IN', {
         style: 'currency',
-        currency: 'USD',
+        currency: 'BRL',
       }).format(price.unit_amount / 100)
     : ''
 

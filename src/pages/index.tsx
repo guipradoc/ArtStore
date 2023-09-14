@@ -63,7 +63,7 @@ export default function Home({ products }: HomeProps) {
       <Head>
         <title>Home | Grãos à Porta Cuiabá</title>
       </Head>
-      <div className="flex lg:flex-row flex-col justify-around bg-white h-1/2  ">
+      <div className="flex lg:flex-row flex-col lg:justify-around bg-white h-1/2  ">
         <div className="justify-center flex flex-col items-center m-4 lg:m-16 ">
           <h1 className="font-baloo  lg:text-5xl text-2xl text-center flex items-center justify-center h-1/2">
             Encontre o melhor café, <br />
@@ -74,12 +74,12 @@ export default function Home({ products }: HomeProps) {
             selecionados pelos melhores sommeliers no mundo.
           </h3>
         </div>
-        <div className="w-full lg:w-1/4 font-baloo justify-center">
+        <div className="w-full lg:w-1/4 font-baloo mx-auto justify-center">
           <div className="navigation-wrapper">
             <div
               ref={sliderRef}
               className="keen-slider"
-              style={{ margin: '0 auto', maxWidth: '100%' }}
+              // style={{ margin: '0 auto', maxWidth: '100%' }}
             >
               {products.map((product) => {
                 return (
@@ -93,7 +93,7 @@ export default function Home({ products }: HomeProps) {
                         src={product.imageUrl}
                         width={400}
                         height={400}
-                        alt=""
+                        alt="Cafes Graos a Porta"
                       />
                       {/* {loaded && instanceRef.current && (
                         <div className="dots">
