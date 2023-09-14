@@ -28,6 +28,8 @@ export default function Product({ product }: ProductProps) {
         priceId: product.defaultPriceId,
       })
 
+      console.log('Response:', response.data)
+
       const { checkoutUrl } = response.data
 
       // router.push('/checkout') // if we need to redirect to another page from our own website (pages)
